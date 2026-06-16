@@ -1,20 +1,31 @@
 import React from 'react'
-import { Link } from 'react-router'
+import { NavLink, Link } from 'react-router'
 
 
 function NavBar() {
   return (
-    <div className='flex justify-between bg-white text-black p-4 sticky border-b border-grey-400 '>
-      <h2>Rick&Morty</h2>
-        <div className='flex item-center gap-4 '>
-        <Link to={"/"} className='hover:text-gray-200'>
-        Home</Link>
-        <Link to={"/characters"}  className='hover:text-gray-200'>
-        Characters</Link>
-        
-        </div>
-    
-    </div>
+  <div className='flex justify-between px-6 py-4 sticky border-b border-gray-200 tracking-tight'>
+  <Link to={'/'} className='text-xl font-bold'>Rick & Morty</Link>
+  <div className='flex items-center gap-6'>
+    <NavLink
+      to="/"
+      end
+      className={({ isActive }) =>
+        `font-medium transition-colors hover:text-black ${isActive ? 'text-green-500' : 'text-gray-700'}`
+      }
+    >
+      Home
+    </NavLink>
+    <NavLink
+      to="/characters"
+      className={({ isActive }) =>
+        `font-medium transition-colors hover:text-black ${isActive ? 'text-green-500' : 'text-gray-700'}`
+      }
+    >
+      Characters
+    </NavLink>
+  </div>
+</div>
   )
 }
 

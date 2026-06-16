@@ -44,9 +44,22 @@
 //   )
 // }
 import React from 'react'
+import { Link } from 'react-router'
+import ChatGpt from '../assets/ChatGPT Image Jun 16, 2026, 02_37_44 PM.png'
+
 
 export default function Home() {
   return (
-    <div>Home</div>
+    <>
+      <div className='relative h-96 bg-cover bg-center' style={{background:`url(${ChatGpt})`}} >
+
+      <div className='absolute text-white'>
+
+      <h1 className=''>Explore the Multiverse</h1>
+      <p>Browse hundreds of characters from across every dimension of the Rick and Morty universe. Wubba lubba dub dub!</p>
+      <Link to="/characters"> Browse Characters </Link>
+    </div>
+    </div>
+    </>
   )
 }

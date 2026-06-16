@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import {Characters, CharacterDetail} from "./pages/Characters";
 import NavBar from "./pages/NavBar";
 import NotFound from "./pages/NotFound";
+import Footer from "./pages/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path="/characters/:id" element={<CharacterDetail />} />
       <Route path="*" element={<NotFound/>}/>
     </Routes>
+    <Footer/>
     </BrowserRouter>
   );
 }
