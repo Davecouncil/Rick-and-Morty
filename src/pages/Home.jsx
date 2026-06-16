@@ -48,17 +48,23 @@ import { Link } from 'react-router'
 import ChatGpt from '../assets/ChatGPT Image Jun 16, 2026, 02_37_44 PM.png'
 
 
+
+
 export default function Home() {
   return (
     <>
-      <div className='relative h-96 bg-cover bg-center' style={{background:`url(${ChatGpt})`}} >
+      <div className='relative h-125 bg-cover bg-center' style={{backgroundImage:`url(${ChatGpt})`}} >
 
-      <div className='absolute text-white'>
-
-      <h1 className=''>Explore the Multiverse</h1>
-      <p>Browse hundreds of characters from across every dimension of the Rick and Morty universe. Wubba lubba dub dub!</p>
-      <Link to="/characters"> Browse Characters </Link>
+      <div className='absolute w-screen text-white h-120 flex justify-center items-center '>
+        <div className='flex flex-col gap-7 items-center'>
+      <h1 className='text-6xl font-bold '>Explore the Multiverse</h1>
+      <p className='text-wrap text-xl text-gray-200 '>Browse hundreds of characters from across every dimension <br /> of the Rick and Morty universe. Wubba lubba dub dub!</p>
+      <Link to="/characters" className=' bg-[#79D36E] px-7 py-3 rounded-xl '> Browse Characters </Link>
+      </div>
     </div>
+    </div>
+    <div>
+
     </div>
     </>
   )
