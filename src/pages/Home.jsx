@@ -66,7 +66,7 @@ export default function Home() {
     </div>
 
 
-    <section className="bg-gray-100 py-20">
+    <section className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-6">
     <div className='flex flex-col items-center gap-4 '>
       <h1>Featured Characters</h1>
@@ -74,7 +74,7 @@ export default function Home() {
       <div>
         hhhh
       </div>
-      <Link> View All Character <RiArrowRightCircleLine /> </Link>
+      <Link className='  py-2.5 px-6.5 rounded-[5px] text-xs font-medium text-gray-500 flex items-center gap-3 border border-gray-300'> View All Character <RiArrowRightCircleLine /> </Link>
     </div>
     </div>
     </section>
